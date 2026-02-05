@@ -142,10 +142,7 @@ export default function HomeClient({ galleryImages, conventionTableImages }: Hom
             {/* About Section */}
             <div className="space-y-4">
               <div className="text-center mb-8">
-                <h3 className="text-4xl font-bold mb-3" style={{color: '#2C2C2C'}}>About Mo</h3>
-                <p className="text-lg" style={{color: '#64748b'}}>
-                  Learn more about my work and artistic journey.
-                </p>
+                <h3 className="text-4xl font-bold mb-3" style={{color: '#FF7E70'}}>About Mo</h3>
               </div>
               <p className="text-lg leading-relaxed mb-4" style={{color: '#4A4A4A'}}>
                 Mo is a <span className="font-semibold" style={{color: '#FF7E70'}}>US-based artist</span> specializing in highly detailed character work from anime, manga, and video game fandoms — as well as original characters.
@@ -158,8 +155,8 @@ export default function HomeClient({ galleryImages, conventionTableImages }: Hom
             {/* Contact Form Section with white background */}
             <div className="space-y-4">
               <div className="text-center mb-8">
-                <h3 className="text-4xl font-bold mb-3" style={{color: '#2C2C2C'}}>Get in Touch</h3>
-                <p className="text-lg" style={{color: '#64748b'}}>
+                <h3 className="text-4xl font-bold mb-3" style={{color: '#FF7E70'}}>Get in Touch</h3>
+                <p className="text-lg" style={{color: '#4A4A4A'}}>
                   I&apos;d love to hear from you. Send me a message and I&apos;ll respond as soon as possible.
                 </p>
               </div>

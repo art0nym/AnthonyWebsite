@@ -27,33 +27,38 @@ export default function Gallery({ images, onModalChange }: GalleryProps) {
   const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
   const preloadedRef = useRef(new Set<number>());
 
+  // Aggressive preload function that uses fetch with higher priority
   const preloadImage = useCallback((index: number) => {
-    if (preloadedRef.current.has(index)) return;
+    if (preloadedRef.current.has(index) || !images[index]) return;
     const image = images[index];
-    if (!image) return;
-    const img = new window.Image();
-    img.src = image.src;
     preloadedRef.current.add(index);
-    if (typeof img.decode === 'function') {
-      img.decode().catch(() => undefined);
+    
+    // Use fetch to preload the image data
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(() => {
+        fetch(image.src).catch(() => {
+          // Fallback to Image element if fetch fails
+          const img = new window.Image();
+          img.src = image.src;
+        });
+      });
+    } else {
+      fetch(image.src).catch(() => {
+        const img = new window.Image();
+        img.src = image.src;
+      });
     }
   }, [images]);
 
   // Preload images in background after page load
   useEffect(() => {
-    // Wait for page to be idle, then preload images
+    // Wait for page to be idle, then preload all images aggressively
     const timer = setTimeout(() => {
-      if ('requestIdleCallback' in window) {
-        requestIdleCallback(() => {
-          images.forEach((_, index) => preloadImage(index));
-        });
-      } else {
-        // Fallback for browsers without requestIdleCallback
-        setTimeout(() => {
-          images.forEach((_, index) => preloadImage(index));
-        }, 2000);
-      }
-    }, 1000);
+      images.forEach((_, index) => {
+        // Preload all images immediately, not just when idle
+        preloadImage(index);
+      });
+    }, 100); // Reduced delay for faster preloading
     return () => clearTimeout(timer);
   }, [images, preloadImage]);
 
@@ -66,11 +71,24 @@ export default function Gallery({ images, onModalChange }: GalleryProps) {
   };
 
   const openLightbox = (index: number) => {
-    preloadImage(index);
     setSelectedImage(index);
     setShowModal(true);
-    // Lightbox opens with preloaded images; no loading state needed
     onModalChange?.(true);
+    
+    // Aggressively preload current image and surrounding images
+    setTimeout(() => {
+      const prevIdx = index > 0 ? index - 1 : images.length - 1;
+      const nextIdx = index < images.length - 1 ? index + 1 : 0;
+      const next2Idx = nextIdx < images.length - 1 ? nextIdx + 1 : (nextIdx === images.length - 1 ? 0 : 1);
+      const prev2Idx = prevIdx > 0 ? prevIdx - 1 : images.length - 1;
+      
+      // Preload current and 4 surrounding images
+      preloadImage(index);
+      preloadImage(prevIdx);
+      preloadImage(nextIdx);
+      preloadImage(next2Idx);
+      preloadImage(prev2Idx);
+    }, 0);
   };
 
   const closeLightbox = useCallback(() => {
@@ -83,23 +101,49 @@ export default function Gallery({ images, onModalChange }: GalleryProps) {
     if (selectedImage === null) return;
     const newIndex = selectedImage > 0 ? selectedImage - 1 : images.length - 1;
     setSelectedImage(newIndex);
-    // Don't reset loading state - image is already preloaded
-  }, [selectedImage, images.length]);
+    // Preload adjacent images immediately for instant transitions
+    setTimeout(() => {
+      const prevIdx = newIndex > 0 ? newIndex - 1 : images.length - 1;
+      const nextIdx = newIndex < images.length - 1 ? newIndex + 1 : 0;
+      const next2Idx = nextIdx < images.length - 1 ? nextIdx + 1 : (nextIdx === images.length - 1 ? 0 : 1);
+      preloadImage(newIndex);
+      preloadImage(prevIdx);
+      preloadImage(nextIdx);
+      preloadImage(next2Idx);
+    }, 0);
+  }, [selectedImage, images.length, preloadImage]);
 
   const goToNext = useCallback(() => {
     if (selectedImage === null) return;
     const newIndex = selectedImage < images.length - 1 ? selectedImage + 1 : 0;
     setSelectedImage(newIndex);
-    // Don't reset loading state - image is already preloaded
-  }, [selectedImage, images.length]);
+    // Preload adjacent images immediately for instant transitions
+    setTimeout(() => {
+      const prevIdx = newIndex > 0 ? newIndex - 1 : images.length - 1;
+      const nextIdx = newIndex < images.length - 1 ? newIndex + 1 : 0;
+      const next2Idx = nextIdx < images.length - 1 ? nextIdx + 1 : (nextIdx === images.length - 1 ? 0 : 1);
+      preloadImage(newIndex);
+      preloadImage(prevIdx);
+      preloadImage(nextIdx);
+      preloadImage(next2Idx);
+    }, 0);
+  }, [selectedImage, images.length, preloadImage]);
 
   useEffect(() => {
     if (!showModal || selectedImage === null) return;
-    const prevIndex = selectedImage > 0 ? selectedImage - 1 : images.length - 1;
-    const nextIndex = selectedImage < images.length - 1 ? selectedImage + 1 : 0;
-    preloadImage(selectedImage);
-    preloadImage(prevIndex);
-    preloadImage(nextIndex);
+    
+    // Preload a wider range of images for smooth navigation
+    const preloadRange = (centerIndex: number, radius: number) => {
+      for (let i = -radius; i <= radius; i++) {
+        let idx = centerIndex + i;
+        if (idx < 0) idx += images.length;
+        if (idx >= images.length) idx -= images.length;
+        preloadImage(idx);
+      }
+    };
+    
+    // Preload current image and 3 images in each direction
+    preloadRange(selectedImage, 3);
   }, [showModal, selectedImage, images.length, preloadImage]);
 
   // Keyboard navigation
