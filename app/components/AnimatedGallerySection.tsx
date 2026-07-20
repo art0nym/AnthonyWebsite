@@ -26,11 +26,11 @@ export default function AnimatedGallerySection({ images, onModalChange }: Animat
         <div className="text-center mb-8 px-4">
           <h2 
             className="text-4xl md:text-5xl font-bold mb-4" 
-            style={{ color: '#FF7E70', textTransform: 'uppercase' }}
+            style={{ color: '#7576F9', textTransform: 'uppercase' }}
           >
             Gallery
           </h2>
-          <p className="text-lg md:text-xl" style={{ color: '#666' }}>
+          <p className="text-lg md:text-xl" style={{ color: '#514A51' }}>
             Explore my collection of artwork
           </p>
         </div>
@@ -39,15 +39,7 @@ export default function AnimatedGallerySection({ images, onModalChange }: Animat
 
       <style jsx>{`
         .animated-gallery-bg {
-          background: linear-gradient(
-            -45deg,
-            #f3e7d7,
-            #f8d7e6,
-            #e6d7f3,
-            #f3e7d7
-          );
-          background-size: 400% 400%;
-          animation: gradient 15s ease infinite;
+          background: #FFFFFF;
         }
 
         @keyframes gradient {

@@ -1,0 +1,86 @@
+[
+  {
+    "month": "January",
+    "monthNumber": 1,
+    "imageSrc": null,
+    "events": []
+  },
+  {
+    "month": "February",
+    "monthNumber": 2,
+    "imageSrc": null,
+    "events": []
+  },
+  {
+    "month": "March",
+    "monthNumber": 3,
+    "imageSrc": null,
+    "events": []
+  },
+  {
+    "month": "April",
+    "monthNumber": 4,
+    "imageSrc": null,
+    "events": []
+  },
+  {
+    "month": "May",
+    "monthNumber": 5,
+    "imageSrc": null,
+    "events": []
+  },
+  {
+    "month": "June",
+    "monthNumber": 6,
+    "imageSrc": null,
+    "events": []
+  },
+  {
+    "month": "July",
+    "monthNumber": 7,
+    "imageSrc": null,
+    "events": []
+  },
+  {
+    "month": "August",
+    "monthNumber": 8,
+    "imageSrc": null,
+    "events": []
+  },
+  {
+    "month": "September",
+    "monthNumber": 9,
+    "imageSrc": null,
+    "events": [
+      {
+        "name": "Anime Idaho",
+        "dates": "Sep 19-20",
+        "url": "https://www.animeidaho.com/"
+      }
+    ]
+  },
+  {
+    "month": "October",
+    "monthNumber": 10,
+    "imageSrc": null,
+    "events": []
+  },
+  {
+    "month": "November",
+    "monthNumber": 11,
+    "imageSrc": null,
+    "events": [
+      {
+        "name": "Kumoricon",
+        "dates": "Nov 13-15",
+        "url": "https://www.kumoricon.org/"
+      }
+    ]
+  },
+  {
+    "month": "December",
+    "monthNumber": 12,
+    "imageSrc": null,
+    "events": []
+  }
+]

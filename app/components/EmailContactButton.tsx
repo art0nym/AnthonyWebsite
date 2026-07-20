@@ -18,20 +18,20 @@ export default function EmailContactButton() {
     <div className="space-y-2">
       {showEmail ? (
         <div className="flex flex-col sm:flex-row gap-2 items-start sm:items-center">
-          <span className="text-xl font-semibold" style={{color: '#FF7E70'}}>
+          <span className="text-xl font-semibold" style={{color: '#7576F9'}}>
             {email}
           </span>
           <button
             onClick={handleCopyEmail}
             className="px-3 py-1 text-sm font-semibold rounded transition-colors"
             style={{
-              backgroundColor: '#FF7E70',
+              backgroundColor: '#7576F9',
               color: '#FFFFFF',
               border: 'none',
               cursor: 'pointer'
             }}
-            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#E86E5D'}
-            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#FF7E70'}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#514A51'}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#7576F9'}
           >
             {copied ? '✓ Copied' : 'Copy'}
           </button>
@@ -39,7 +39,7 @@ export default function EmailContactButton() {
             href={`mailto:${email}`}
             className="px-3 py-1 text-sm font-semibold rounded transition-colors"
             style={{
-              backgroundColor: '#2C2C2C',
+              backgroundColor: '#514A51',
               color: '#FFFFFF',
               border: 'none',
               cursor: 'pointer',
@@ -57,12 +57,12 @@ export default function EmailContactButton() {
           className="text-xl font-semibold px-4 py-2 rounded transition-colors"
           style={{
             color: '#FFFFFF',
-            backgroundColor: '#FF7E70',
+            backgroundColor: '#7576F9',
             border: 'none',
             cursor: 'pointer'
           }}
-          onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#E86E5D'}
-          onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#FF7E70'}
+          onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#514A51'}
+          onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#7576F9'}
         >
           Reveal Email
         </button>

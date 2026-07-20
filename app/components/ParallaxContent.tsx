@@ -2,12 +2,12 @@
 
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
-import Birds from './Birds';
+
+const HERO_ASSET_VERSION = '20260424';
 
 export default function ParallaxContent() {
   const containerRef = useRef<HTMLDivElement>(null);
   const backgroundRef = useRef<HTMLDivElement>(null);
-  const birdsRef = useRef<HTMLDivElement>(null);
   const foregroundRef = useRef<HTMLDivElement>(null);
   const arrowRef = useRef<HTMLDivElement>(null);
   const svgRef = useRef<SVGSVGElement>(null);
@@ -139,11 +139,6 @@ export default function ParallaxContent() {
         backgroundRef.current.style.transform = `translate3d(0, ${scrolled * -0.03}px, 0)`;
       }
 
-      // Birds scroll at same rate as background for parallax
-      if (birdsRef.current) {
-        birdsRef.current.style.transform = `translate3d(0, ${scrolled * -0.03}px, 0)`;
-      }
-
       // Foreground scrolls faster - scroll up
       if (foregroundRef.current) {
         foregroundRef.current.style.transform = `translate3d(0, ${scrolled * -0.15}px, 0)`;
@@ -200,7 +195,7 @@ export default function ParallaxContent() {
         }}
       >
         <Image
-          src="/images/hero/background.PNG"
+          src={`/images/hero/hero-background.PNG?v=${HERO_ASSET_VERSION}`}
           alt="Hero background"
           fill
           priority
@@ -216,9 +211,6 @@ export default function ParallaxContent() {
         />
       </div>
 
-      {/* Birds layer - between background and foreground */}
-      <Birds ref={birdsRef} />
-
       {/* Foreground layer - scrolls faster */}
       <div
         ref={foregroundRef}
@@ -231,7 +223,7 @@ export default function ParallaxContent() {
         }}
       >
         <Image
-          src="/images/hero/foreground.PNG"
+          src={`/images/hero/character.PNG?v=${HERO_ASSET_VERSION}`}
           alt="Hero foreground"
           fill
           priority
@@ -240,7 +232,7 @@ export default function ParallaxContent() {
           style={{
             filter: foregroundLoaded ? 'blur(0px)' : 'blur(10px)',
             transition: 'filter 0.3s ease-out',
-            transform: isMobile ? 'scale(1.15) translateY(30px) translateX(12px)' : 'scale(1.15) translateY(-30px) translateX(20px)',
+            transform: isMobile ? 'scale(1.15) translateY(calc(30px + 10%)) translateX(12px)' : 'scale(1.15) translateY(calc(-30px + 10%)) translateX(20px)',
             transformOrigin: 'center center'
           }}
           onLoad={() => setForegroundLoaded(true)}

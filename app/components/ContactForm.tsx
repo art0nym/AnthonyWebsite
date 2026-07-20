@@ -244,7 +244,7 @@ export default function ContactForm() {
         .form-group label {
           display: block;
           font-weight: 600;
-          color: #2C2C2C;
+          color: #514A51;
           margin-bottom: 0.5rem;
           font-size: 0.875rem;
           text-transform: uppercase;
@@ -261,17 +261,17 @@ export default function ContactForm() {
           font-size: 1rem;
           font-family: inherit;
           transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-          color: #2C2C2C;
+          color: #514A51;
         }
 
         .form-group input:focus,
         .form-group textarea:focus {
           outline: none;
-          border-color: #FF7E70;
+          border-color: #7576F9;
           background: rgba(255, 255, 255, 1);
           box-shadow: 
-            0 0 0 4px rgba(255, 126, 112, 0.1),
-            0 4px 12px rgba(255, 126, 112, 0.15);
+            0 0 0 4px rgba(117,s*118,s*249, 0.1),
+            0 4px 12px rgba(117,s*118,s*249, 0.15);
           transform: translateY(-2px);
         }
 
@@ -322,7 +322,7 @@ export default function ContactForm() {
           font-family: Arial, sans-serif;
           text-transform: uppercase;
           font-size: 14px;
-          color: #FF7E70;
+          color: #7576F9;
           letter-spacing: 2.8px;
           font-weight: 700;
           line-height: 1.6;
@@ -364,7 +364,7 @@ export default function ContactForm() {
           height: 100%;
           top: 0;
           transition: all 0.4s ease;
-          background-color: #FF7E70;
+          background-color: #7576F9;
           z-index: 0;
         }
 
@@ -391,7 +391,7 @@ export default function ContactForm() {
           width: 20px;
           height: 20px;
           border: 2px solid transparent;
-          border-top-color: #FF7E70;
+          border-top-color: #7576F9;
           border-radius: 50%;
           animation: spin 1s linear infinite;
           top: 50%;

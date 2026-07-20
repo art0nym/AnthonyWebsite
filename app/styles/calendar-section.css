@@ -13,7 +13,7 @@
   height: 100%;
   z-index: 0;
   padding: 32px 0;
-  background: linear-gradient(135deg, #FAF9F6 0%, #F0EAD6 50%, #FFE8D6 100%);
+  background: #FFFFFF;
   pointer-events: none;
 }
 

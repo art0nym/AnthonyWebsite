@@ -4,6 +4,8 @@ import "./globals.css";
 import "./styles/global.css";
 import SiteLoader from "./components/SiteLoader";
 
+const LOGO_VERSION = "20260424";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -15,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ArtofMo",
+  title: "art0nym",
   description: "Art of Mo - Digital Artist Portfolio",
 };
 
@@ -27,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/images/logo/logo5.PNG" type="image/png" />
+        <link rel="icon" href={`/images/logo/logo5.PNG?v=${LOGO_VERSION}`} type="image/png" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

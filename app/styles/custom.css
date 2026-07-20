@@ -5,10 +5,10 @@
 
 /* Color Variables */
 :root {
-  --salmon: #FF7E70;
+  --salmon: #7576F9;
   --white: #FFFFFF;
-  --cream: #FAF9F6;
-  --dark: #2C2C2C;
+  --cream: #FFFFFF;
+  --dark: #514A51;
 }
 
 /* Example custom classes - feel free to add your own */
@@ -43,7 +43,7 @@
   content: '';
   position: absolute;
   inset: -8px;
-  background: radial-gradient(circle, rgba(255, 126, 112, 0.25) 0%, rgba(255, 126, 112, 0) 70%);
+  background: radial-gradient(circle, rgba(117, 118, 249, 0.25) 0%, rgba(117, 118, 249, 0) 70%);
   border-radius: 50%;
   animation: hero-glow 2.5s ease-in-out infinite;
   z-index: -1;
@@ -51,7 +51,7 @@
 
 .hero-arrow {
   color: var(--salmon);
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2)) drop-shadow(0 4px 12px rgba(255, 126, 112, 0.4));
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2)) drop-shadow(0 4px 12px rgba(117, 118, 249, 0.4));
   animation: hero-bounce 2s ease-in-out infinite;
 }
 
@@ -104,7 +104,7 @@
   height: 100%;
   z-index: 0;
   padding: 32px 0;
-  background: linear-gradient(135deg, #FAF9F6 0%, #F0EAD6 50%, #FFE8D6 100%);
+  background: #FFFFFF;
   pointer-events: none;
 }
 .calendar-content-wrapper {
@@ -124,7 +124,7 @@
   position: relative;
 }
 .calendar-header {
-  background: #FF7E70;
+  background: #7576F9;
   color: #fff;
   padding: 1.5em 1.25em;
   border-radius: 1em 1em 0 0;
@@ -149,7 +149,7 @@
   border-color: #E8DCC4;
 }
 .calendar-event-link {
-  color: #FF7E70;
+  color: #7576F9;
   text-decoration: none;
   cursor: pointer;
   transition: text-decoration 0.2s;
@@ -158,13 +158,13 @@
   text-decoration: underline;
 }
 .calendar-event-name {
-  color: #555;
+  color: #514A51;
 }
 .calendar-event-date {
-  color: #999;
+  color: #514A51;
 }
 .calendar-no-events {
-  color: #cacaca;
+  color: #514A51;
   padding-top: 1em;
 }
 .calendar-ring-deco {

@@ -178,13 +178,13 @@ export default function PastConventionTablesSection({ onModalChange }: { onModal
           width: '100%',
           height: '100%',
           zIndex: 1,
-          background: 'linear-gradient(135deg, #2C2C2C 0%, #4B2E2E 50%, #7A4A4A 100%)',
-          opacity: 0.85,
+          background: '#FFFFFF',
+          opacity: 0.6,
           pointerEvents: 'none',
         }}
       />
       <section className="px-8" style={{ position: 'relative', zIndex: 2, paddingTop: '96px', paddingBottom: '96px', minHeight: '600px' }}>
-      <h2 className="text-3xl font-bold text-center mb-8" style={{ color: '#FFFFFF', textTransform: 'uppercase' }}>Past Convention Tables</h2>
+      <h2 className="text-3xl font-bold text-center mb-8" style={{ color: '#514A51', textTransform: 'uppercase' }}>Past Convention Tables</h2>
       <div className="relative max-w-6xl mx-auto">
         {/* Left Arrow */}
         <button

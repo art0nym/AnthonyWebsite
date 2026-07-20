@@ -61,7 +61,7 @@ export default function CalendarMonth({ month, events, imageSrc }: CalendarMonth
         left: 0,
         width: '100%',
         height: '100%',
-        backgroundColor: '#FFE8D6',
+        backgroundColor: '#514A51',
         zIndex: 0,
         overflow: 'hidden'
       }}>

@@ -128,7 +128,7 @@ export default function SiteLoader() {
             d="m2,102c0,82.11,17.89,100,100,100,82.11,0,100-17.89,100-100,0-82.11-17.89-100-100-100C19.89,2,2,19.89,2,102Z"
             style={{
               fill: "none",
-              stroke: "#FF7E70",
+              stroke: "#7576F9",
               strokeMiterlimit: 10,
               strokeWidth: "4px",
             }}
@@ -144,7 +144,7 @@ export default function SiteLoader() {
             margin: 0,
             fontSize: "4rem",
             lineHeight: 1,
-            color: "#FF7E70",
+            color: "#7576F9",
           }}
         >
           0
@@ -158,7 +158,7 @@ export default function SiteLoader() {
             margin: 0,
             fontSize: "2rem",
             fontWeight: "700",
-            color: "#FF7E70",
+            color: "#7576F9",
             whiteSpace: "nowrap",
             fontFamily: "var(--font-geist-sans), sans-serif",
           }}

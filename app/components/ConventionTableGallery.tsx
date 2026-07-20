@@ -332,7 +332,7 @@ export default function ConventionTableGallery({ images, onModalChange }: Conven
         .puzzle-item {
           position: relative;
           width: 100%;
-          aspect-ratio: 1 / 1;
+          aspect-ratio: 3 / 4;
           cursor: pointer;
           opacity: 0;
           transform: translateY(40px) scale(0.9);

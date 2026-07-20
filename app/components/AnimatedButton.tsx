@@ -21,7 +21,7 @@ export default function AnimatedButton({ href, text }: AnimatedButtonProps) {
         fontFamily: 'Arial, sans-serif',
         textTransform: 'uppercase',
         fontSize: '14px',
-        color: '#FF7E70',
+        color: '#7576F9',
         letterSpacing: '2.8px',
         fontWeight: '700',
         lineHeight: '1.6',
@@ -50,7 +50,7 @@ export default function AnimatedButton({ href, text }: AnimatedButtonProps) {
       onMouseLeave={(e) => {
         e.currentTarget.style.boxShadow = '0 15px 40px -10px rgba(0, 0, 0, 0.3)';
         e.currentTarget.style.letterSpacing = '2.8px';
-        e.currentTarget.style.color = '#FF7E70';
+        e.currentTarget.style.color = '#7576F9';
         const before = e.currentTarget.querySelector('.btn-before') as HTMLElement;
         const after = e.currentTarget.querySelector('.btn-after') as HTMLElement;
         if (before) before.style.width = '4px';
@@ -67,7 +67,7 @@ export default function AnimatedButton({ href, text }: AnimatedButtonProps) {
           top: 0,
           left: 0,
           transition: 'all 0.4s ease',
-          backgroundColor: '#FF7E70',
+          backgroundColor: '#7576F9',
           zIndex: 0
         }}
       />
@@ -81,7 +81,7 @@ export default function AnimatedButton({ href, text }: AnimatedButtonProps) {
           top: 0,
           right: 0,
           transition: 'all 0.4s ease',
-          backgroundColor: '#FF7E70',
+          backgroundColor: '#7576F9',
           zIndex: 0
         }}
       />
