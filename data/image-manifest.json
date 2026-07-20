@@ -1,0 +1,291 @@
+{
+  "gallery": [
+    {
+      "src": "/images/galleryImages/1 Eula.PNG",
+      "previewSrc": "/images/galleryImages/1 Eula.PNG",
+      "alt": "Eula",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/galleryImages/2 Lynae.PNG",
+      "previewSrc": "/images/galleryImages/2 Lynae.PNG",
+      "alt": "Lynae",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/galleryImages/3 Akaza.PNG",
+      "previewSrc": "/images/galleryImages/3 Akaza.PNG",
+      "alt": "Akaza",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/galleryImages/4 Jade.PNG",
+      "previewSrc": "/images/galleryImages/4 Jade.PNG",
+      "alt": "Jade",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/galleryImages/5 Rumi.PNG",
+      "previewSrc": "/images/galleryImages/5 Rumi.PNG",
+      "alt": "Rumi",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/galleryImages/6 Silverwolf.PNG",
+      "previewSrc": "/images/galleryImages/6 Silverwolf.PNG",
+      "alt": "Silverwolf",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/galleryImages/7 Kafka.PNG",
+      "previewSrc": "/images/galleryImages/7 Kafka.PNG",
+      "alt": "Kafka",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/galleryImages/8 Firefly.PNG",
+      "previewSrc": "/images/galleryImages/8 Firefly.PNG",
+      "alt": "Firefly",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/galleryImages/9 JaneDoe.PNG",
+      "previewSrc": "/images/galleryImages/9 JaneDoe.PNG",
+      "alt": "JaneDoe",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/galleryImages/10 Aira.PNG",
+      "previewSrc": "/images/galleryImages/10 Aira.PNG",
+      "alt": "Aira",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/galleryImages/11 Luna Snow.PNG",
+      "previewSrc": "/images/galleryImages/11 Luna Snow.PNG",
+      "alt": "Luna Snow",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/galleryImages/12 Psylocke.PNG",
+      "previewSrc": "/images/galleryImages/12 Psylocke.PNG",
+      "alt": "Psylocke",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/galleryImages/13 Arlecchino.PNG",
+      "previewSrc": "/images/galleryImages/13 Arlecchino.PNG",
+      "alt": "Arlecchino",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/galleryImages/14 Castorice.PNG",
+      "previewSrc": "/images/galleryImages/14 Castorice.PNG",
+      "alt": "Castorice",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/galleryImages/15 Lingsha.PNG",
+      "previewSrc": "/images/galleryImages/15 Lingsha.PNG",
+      "alt": "Lingsha",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/galleryImages/16 Reze.PNG",
+      "previewSrc": "/images/galleryImages/16 Reze.PNG",
+      "alt": "Reze",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/galleryImages/17 Sue.PNG",
+      "previewSrc": "/images/galleryImages/17 Sue.PNG",
+      "alt": "Sue",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/galleryImages/18 Makima.PNG",
+      "previewSrc": "/images/galleryImages/18 Makima.PNG",
+      "alt": "Makima",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/galleryImages/19 Yixuan.PNG",
+      "previewSrc": "/images/galleryImages/19 Yixuan.PNG",
+      "alt": "Yixuan",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/galleryImages/20 RuanMei.PNG",
+      "previewSrc": "/images/galleryImages/20 RuanMei.PNG",
+      "alt": "RuanMei",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/galleryImages/21 Momo.PNG",
+      "previewSrc": "/images/galleryImages/21 Momo.PNG",
+      "alt": "Momo",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/galleryImages/22 Mydei.PNG",
+      "previewSrc": "/images/galleryImages/22 Mydei.PNG",
+      "alt": "Mydei",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/galleryImages/23 Shinobu.PNG",
+      "previewSrc": "/images/galleryImages/23 Shinobu.PNG",
+      "alt": "Shinobu",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/galleryImages/24 Sunday.PNG",
+      "previewSrc": "/images/galleryImages/24 Sunday.PNG",
+      "alt": "Sunday",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/galleryImages/25 Violet.PNG",
+      "previewSrc": "/images/galleryImages/25 Violet.PNG",
+      "alt": "Violet",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/galleryImages/26 Aki.png",
+      "previewSrc": "/images/galleryImages/26 Aki.png",
+      "alt": "Aki",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/galleryImages/27 Firefly.png",
+      "previewSrc": "/images/galleryImages/27 Firefly.png",
+      "alt": "Firefly",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/galleryImages/28 SAM.png",
+      "previewSrc": "/images/galleryImages/28 SAM.png",
+      "alt": "SAM",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/galleryImages/29 Erza.PNG",
+      "previewSrc": "/images/galleryImages/29 Erza.PNG",
+      "alt": "Erza",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/galleryImages/30 Evelynn.PNG",
+      "previewSrc": "/images/galleryImages/30 Evelynn.PNG",
+      "alt": "Evelynn",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/galleryImages/31 Sparxie.PNG",
+      "previewSrc": "/images/galleryImages/31 Sparxie.PNG",
+      "alt": "Sparxie",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/galleryImages/32 Grace.PNG",
+      "previewSrc": "/images/galleryImages/32 Grace.PNG",
+      "alt": "Grace",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/galleryImages/33 Violet.PNG",
+      "previewSrc": "/images/galleryImages/33 Violet.PNG",
+      "alt": "Violet",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    }
+  ],
+  "convention": [
+    {
+      "src": "/images/conventionTables/AnimeverseReno.PNG",
+      "alt": "AnimeverseReno",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/conventionTables/AnimeverseReno2.PNG",
+      "alt": "AnimeverseReno2",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    },
+    {
+      "src": "/images/conventionTables/AnimeverseReno3.PNG",
+      "alt": "AnimeverseReno3",
+      "width": 800,
+      "height": 1000,
+      "isLandscape": false
+    }
+  ]
+}
